@@ -1,0 +1,14 @@
+{
+    "name": "huimingdeng/mingframework",
+    "description": "composer and framework demo",
+    "type": "project",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "huimingdeng",
+            "email": "1458575181@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

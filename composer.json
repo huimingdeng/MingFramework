@@ -2,7 +2,7 @@
     "name": "huimingdeng/mingframework",
     "description": "composer and framework demo",
     "type": "project",
-    "license": "Apache",
+    "license": "apache",
     "authors": [
         {
             "name": "huimingdeng",

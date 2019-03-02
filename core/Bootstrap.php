@@ -7,8 +7,15 @@
  */
 namespace core;
 class Bootstrap{
-
+    /**
+     * 解析 URL
+     */
     public static function run(){
-        echo "my is bootstrap::run";
+//        echo "my is bootstrap::run";
+        self::parseUrl();
+    }
+
+    public static function parseUrl(){
+        dd('abc');
     }
 }

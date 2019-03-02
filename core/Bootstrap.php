@@ -11,6 +11,7 @@ class Bootstrap{
      * 执行
      */
     public static function run(){
+        session_start();
 //        echo "my is bootstrap::run";
         self::parseUrl();
     }
@@ -24,7 +25,7 @@ class Bootstrap{
             $s = explode('/', $_GET['s']);
             $class = '\web\controller\\'.ucfirst($s[0]);
             $action = $s[1];
-            dd($s);
+//            dd($s);
         }else{
             $class = "\web\controller\Index";
             $action = "show";

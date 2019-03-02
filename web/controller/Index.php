@@ -8,6 +8,7 @@
 namespace web\controller;
 
 use core\View;
+use Gregwar\Captcha\CaptchaBuilder;
 
 class Index{
     protected $view;
@@ -22,7 +23,16 @@ class Index{
         return $this->view->make('index')->with('Version', '版本 1.0 copyright:huimingdeng');
     }
 
-    public function post(){
-
+    public function login(){
+        return $this->view->make('login');//->with('builder', new CaptchaBuilder());
     }
+
+    public function code(){
+        header('Content-type: image/jpeg');
+        $builder = new CaptchaBuilder();
+        $builder->build();
+        $_SESSION['phrase'] = $builder->getPhrase();// 验证码存储
+        $builder->output();
+    }
+
 }

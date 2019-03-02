@@ -4,6 +4,7 @@
  * Author : huimingdeng
  * create at : 2/21/2019 16:55
  */
-
-// 用于测试 GitHub 弃用 Webhooks 后，是否自动同步到 composer 镜像市场
+// 使用第三方类库，自己编写的自动加载函数可能会存在问题，因此使用
+include "vendor\autoload.php";
+\core\Bootstrap::run();
 

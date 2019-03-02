@@ -29,7 +29,7 @@ class Bootstrap{
             $class = "\web\controller\Index";
             $action = "show";
         }
-        ( new $class ) -> $action();
+        echo ( new $class ) -> $action();
         // dd($_SERVER);
     }
 }

@@ -1,5 +1,5 @@
 <?php
-
+namespace web\Model;
 /**
  * Created by PhpStorm.
  * User: huimingdeng

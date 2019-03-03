@@ -10,7 +10,7 @@ namespace web\controller;
 use core\View;
 use Gregwar\Captcha\CaptchaBuilder;
 
-class Index{
+class IndexController{
     protected $view;
 
     public function __construct()

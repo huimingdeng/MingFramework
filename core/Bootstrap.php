@@ -23,11 +23,11 @@ class Bootstrap{
         if (isset($_GET['s'])){
             // 分析 s 变量，生成控制器
             $s = explode('/', $_GET['s']);
-            $class = '\web\controller\\'.ucfirst($s[0]);
+            $class = '\web\controller\\'.ucfirst($s[0]).'Controller';
             $action = $s[1];
 //            dd($s);
         }else{
-            $class = "\web\controller\Index";
+            $class = "\web\controller\IndexController";
             $action = "show";
         }
         echo ( new $class ) -> $action();

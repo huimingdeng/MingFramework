@@ -19,6 +19,7 @@ MingFramework --> mingframework : 测试是否大小写问题导致 GitHub 和 p
     |-- view 视图
     |-- web 项目目录，控制器，模型等
     |-- index.php 入口文件
+    |-- config.php 配置文件
 
 
 ### 视图引擎 ###

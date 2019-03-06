@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $Version;?></title>
+    <title><?php echo APP_NAME.":".VERSION;?></title>
     <style>
         .container{
             width: 1200px;
@@ -13,8 +13,9 @@
     <div class="container">
         <h1>我是HTML文件</h1>
         <p>
-            MingFarmeWork <?php echo $Version;?>
+            <?php echo APP_NAME.":".VERSION;?>
         </p>
+        <footer><?php echo $Version;?></footer>
     </div>
 </body>
 </html>

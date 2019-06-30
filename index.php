@@ -12,4 +12,7 @@ use \NoahBuscher\Macaw\Macaw;
 Macaw::get('/', function () {
 	echo 'Welcome to MingFrameWork!';
 });
+
+Macaw::get('/index', 'app\Controllers\Index@index');
+
 Macaw::dispatch();

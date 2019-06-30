@@ -14,7 +14,8 @@
         "php":  ">=5.4.0",
         "smarty/smarty": "~3.1",
         "gregwar/captcha": "dev-master",
-        "noahbuscher/macaw": "dev-master"
+        "noahbuscher/macaw": "dev-master",
+        "biaoqianwo/simple-pdo": "dev-master"
     },
     "autoload": {
         "files":[
@@ -27,8 +28,8 @@
             "app\\": "application"
         },
         "classmap":[
-            "app/controllers",
-            "app/models"
+            "application/controllers",
+            "application/models"
         ]
     }
 }

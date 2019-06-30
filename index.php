@@ -10,7 +10,9 @@ require_once __DIR__ . "/vendor/autoload.php";
 
 use \Bee\PDO\Model;
 use \NoahBuscher\Macaw\Macaw;
-Model::config(require_once __DIR__ . '/config/db.php');
+
+// 目前必须使用正确的数据库配置，否则报错，目前简易版本应该增加一个判断
+// Model::config(require_once __DIR__ . '/config/db.php');
 
 // 可以抽出下面路由形成路由文件
 Macaw::get('/', function () {

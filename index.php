@@ -8,7 +8,11 @@
 require_once __DIR__ . "/vendor/autoload.php";
 // \core\Bootstrap::run();
 
+use \Bee\PDO\Model;
 use \NoahBuscher\Macaw\Macaw;
+Model::config(require_once __DIR__ . '/config/db.php');
+
+// 可以抽出下面路由形成路由文件
 Macaw::get('/', function () {
 	echo 'Welcome to MingFrameWork!';
 });

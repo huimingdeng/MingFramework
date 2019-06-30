@@ -10,6 +10,6 @@ require_once __DIR__ . "/vendor/autoload.php";
 
 use \NoahBuscher\Macaw\Macaw;
 Macaw::get('/', function () {
-	echo 'Welcome to Bee!';
+	echo 'Welcome to MingFrameWork!';
 });
 Macaw::dispatch();

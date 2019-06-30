@@ -25,6 +25,10 @@
             "core\\": "core",
             "web\\": "web",
             "app\\": "application"
-        }
+        },
+        "classmap":[
+            "app/controllers",
+            "app/models"
+        ]
     }
 }
